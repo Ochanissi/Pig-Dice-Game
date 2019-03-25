@@ -2,6 +2,26 @@
 *** GENERAL
 **********************************************/
 
+.final-score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 520px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+}
+
+.final-score:focus { outline: none; }
+
+#dice-1 { top: 120px; }
+#dice-2 { top: 250px; }
+
+
 * {
     margin: 0;
     padding: 0;
@@ -152,29 +172,3 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
-
-.winning-score {
-    position: absolute;
-    width: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #555;
-    background: none;
-    border: 2px solid rgb(134, 130, 130);
-    font-family: Lato;
-    font-size: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 300;
-    transition: background-color 0.3s, color 0.3s;
-    text-align: center;
-    box-shadow: inset 3px 3px 50px 10px rgba(166,166,166,0.5);
-    box-shadow: 3px 3px 3px 3px rgba(166,166,166,0.5);
-    font-weight: bold;
-
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
